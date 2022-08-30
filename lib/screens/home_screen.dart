@@ -1,5 +1,6 @@
-import 'package:designs/widgets/page_title.dart';
 import 'package:flutter/material.dart';
+import 'package:designs/widgets/custom_bottom_nav.dart';
+import 'package:designs/widgets/page_title.dart';
 import 'package:designs/widgets/background.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,8 +10,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Stack(
-      children: [Background(), _HomeBody()],
-    ));
+          children: [Background(), _HomeBody()],
+    ),
+    bottomNavigationBar: CustomBottomNavBar(),);
   }
 }
 
